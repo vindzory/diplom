@@ -6,7 +6,7 @@ module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "msych-devops3-cluster" 
   cluster_version = "1.26"
-  subnets         = ["<10.10.10.0/24>"]
+  subnets         = ["subnet-0abc123"]
 
   node_groups = {
     example = {
