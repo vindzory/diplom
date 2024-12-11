@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Запуск при пуше в ветку main
+      - main 
 
 jobs:
   build:
@@ -23,5 +23,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          tags: ${{ secrets.DOCKER_USERNAME }}/test-python-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/diplom:latest
           push: truex
